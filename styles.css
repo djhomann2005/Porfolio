@@ -120,3 +120,34 @@ h2 {
     background-color: #474747;
     padding: 15px 20px;
 }
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Contact Page */
+.contact-page {
+    text-align: center;
+}
+
+#contact-logo {
+    align-self: center;
+    height: 400px;
+    width: auto;
+}
+
+#email a {
+    text-decoration: underline;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-logos img {
+    width: 50px;
+    margin: 20px;
+}
