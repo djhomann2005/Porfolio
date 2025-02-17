@@ -88,6 +88,7 @@ h2 {
     box-shadow: 3px 3px 9px #E7DFDD;
     padding: 30px;
     margin: 20px 0;
+    max-width: 40%;
 }
 
 .project-title {
@@ -101,6 +102,10 @@ h2 {
 
 .desc-container {
     display: none;
+}
+
+.project-skills-list {
+    list-style-position: inside;
 }
 
 /* Skills Section */

@@ -41,7 +41,7 @@
             <h2>Projects</h2>
             <p>Check out some of the projects DJ has created in his journey</p>
             <div class="project-container">
-                <div id="credit-validator" class="project-tile">
+                <div id="credit-validator" class="project-tile" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
                     <h3 class="project-title">Credit Validator</h3>
                     <img src="/img/credit_validator_screenshot.png" class="project-photo">
                     <div class="desc-container">
@@ -53,6 +53,7 @@
                             of numbers and outputting which credit card companies have issued invalid cards, though this
                             functionality is not implemented on the website.
                         </p>
+                        <br>
                         <p class="project-skills">
                             This project demonstrates:
                             <ul class="project-skills-list">
@@ -63,7 +64,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="mixed-messages" class="project-tile">
+                <div id="mixed-messages" class="project-tile" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
                     <h3 class="project-title">Mixed Messages</h3>
                     <img src="/img/mixed_messages_screenshot.png" class="project-photo">
                     <div class="desc-container">
@@ -75,9 +76,10 @@
                             randomly generated within a range, but also will not duplicate numbers in the white balls. The 
                             motivational quote comes from an array of quotes.
                         </p>
+                        <br>
                         <p class="project-skills">
                             This project demonstrates:
-                            <ul class="project-skills">
+                            <ul class="project-skills-list">
                                 <li>Accepting user input</li>
                                 <li>Running functions via JavaScript</li>
                                 <li>Using JavaScript to change webpage elements</li>
@@ -108,5 +110,7 @@
             &copy; 2025 DJ Homann. All rights reserved.
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
