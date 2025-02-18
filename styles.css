@@ -1,14 +1,22 @@
+:root {
+    --background-color: #0E0B16;
+    --text-color: #E7DFDD;
+    --accent-color: #A239CA;
+    --secondary-color: #4717F6;
+    --font-family: "Edu TAS Beginner", serif;
+}
+
 /* General Reset */
-* {
-    font-family: "Edu TAS Beginner", serif;
+body {
+    font-family: var(--font-family);
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1em;
     text-decoration: none;
     padding: 0;
     margin: 0;
-    background-color: #0e0b16;
-    color: #E7DFDD;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Nav Bar */
@@ -28,30 +36,40 @@
 }
 
 .nav-menu li {
-    padding: 20px 30px;
-    background-color: #0e0b16;
+    padding: 0px 30px;
+    background-color: var(--background-color);
 }
 
 .nav-menu a {
-    background-color: #0e0b16;
-    color: #E7DFDD;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
 }
 
 hr {
-    border: 2px solid #A239CA;
+    border: 2px solid var(--accent-color);
     margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3em;
     font-weight: 700;
     text-align: center;
-    text-shadow: 3px -3px 9px #4717F6;
+    text-shadow: 3px -3px 9px var(--secondary-color);
 }
 
 /* About Section */
+main {
+    font-size: 1.5em;
+}
+
 #about {
-    border: 3px dashed #A239CA;
+    border: 3px dashed var(--accent-color);
     border-radius: 10px;
     background-color: #474747;
     padding: 0px 30px 20px 30px;
@@ -63,11 +81,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3em;
     text-align: center;
     font-weight: 600;
-    color: #4717F6;
-    text-shadow: 1px 1px 4px #E7DFDD;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 4px var(--text-color);
     margin: 15px 0px;
 }
 
@@ -83,9 +101,9 @@ h2 {
 }
 
 .project-tile {
-    border: 2px solid #A239CA;
+    border: 2px solid var(--accent-color);
     border-radius: 10px;
-    box-shadow: 3px 3px 9px #E7DFDD;
+    box-shadow: 3px 3px 9px var(--text-color);
     padding: 30px;
     margin: 20px 0;
     max-width: 40%;
@@ -96,8 +114,8 @@ h2 {
 }
 
 .project-photo {
-    height: 200px;
-    width: auto;
+    width: 90%;
+    height: auto;
 }
 
 .desc-container {
@@ -155,4 +173,54 @@ footer {
 .social-logos img {
     width: 50px;
     margin: 20px;
+}
+
+@media (max-width: 600px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-logo {
+        height: 60px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #about, .logo-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-tile {
+        max-width: 90%;
+    }
+
+    .logo-container img {
+        width: 75px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-tile {
+        max-width: 45%;
+    }
 }
